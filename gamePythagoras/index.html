@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Title</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+  <script src="js/main.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <div id="board">
+    <div id ="player"></div>
+    
+    <div id ="arena"></div>
+    <button id="acak" onclick="ButtonOnClick()" ><img src="image/button_persegi_panjang20001.png"/></button>
+    <div id="text" style="visibility:hidden">Hasil Random</div>
+    
+    <div ><img id="acc1" src="image/VidyaKebun.png"></div>
+    <div ><img id="acc2" src="image/VidyaKebun.png"></div>
+
+    <div id="hitam"></div>
+    <div id="benar"><img src="image/benar.png"></div>
+    <div id="salah"><img src="image/salah.png"></div>
+    
+    <div id="area" style="visibility:hidden">Arena</div>
+    <a href="#popup1" style="visibility:hidden"><input type="button" value="klik"></a>
+    
+    <div id="popup1" class="overlay" >
+      <div class='popup' style="background-image: url('image/pulau2.png')">
+        <div style="margin-left:20px;background-color: lightblue;width:70%;border-radius: 10px">
+        <h2>Pertanyaan</h2>
+        <div class='content' id='content'>
+          <p id="soal"></p>
+          
+          
+        </div>
+        <a href='#' class='button button-blue' onclick='cekJawaban(0)'>
+          <span id="jawaban0">A</span>
+        </a>
+        <a href='#' class='button button-blue' onclick='cekJawaban(1)'>
+          <span id="jawaban1">B</span>
+        </a>
+        <a href='#' class='button button-blue' onclick='cekJawaban(2)'>
+          <span id="jawaban2">C</span>
+        </a>
+        
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</body>
+</html>
+    
+    
+    
+    
+    
+    
+    
